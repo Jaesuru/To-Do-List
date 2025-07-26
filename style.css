@@ -8,6 +8,7 @@
 }
 
 body {
+    margin-top: 2.5rem;
     background-color: #FAF9EE;
     color: black;
     display: flex;

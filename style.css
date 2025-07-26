@@ -1,0 +1,92 @@
+@font-face {
+    src: url(/fonts/Tiny5-Regular.ttf);
+    font-family: tiny5;
+}
+
+* {
+    font-family: tiny5, monospace;
+}
+
+body {
+    background-color: #FAF9EE;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.line {
+  border: none;
+  border-top: 5px solid black;
+  margin: 1.5rem 2rem;
+  width: 100%;
+  max-width: 550px;
+}
+
+
+.listCard {
+    background-color: #FAF9EE;
+    border: 5px solid black;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 0px black;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.cardTitle {
+    margin-top: .1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#todoItemForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+#todoItemInput {
+    background-color: #A2AF9B; 
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    border: 5px solid black;
+    height: 3.5rem;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 0px black;
+}
+
+#todoItemInput:focus {
+    outline: none;
+}
+
+#todoItemInput::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+#todoItemButton {
+    background-color: hsl(100, 11%, 50%);
+    font-size: 2rem;
+    border: 5px solid black;
+    height: 3.5rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 0px black;
+    cursor: pointer;
+}
+
+.itemList {
+    width: 100%;
+    max-width: 500px;
+    background-color: #FAF9EE;
+    border: 5px solid black;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 0px black;
+    box-sizing: border-box;
+}
+

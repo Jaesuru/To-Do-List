@@ -1,4 +1,4 @@
-<img width="526" height="663" alt="image" src="https://github.com/user-attachments/assets/b7c9d4b9-6b0e-4323-b36f-d21c5ceda81f" />
+<img width="248" height="auto" alt="image" src="https://github.com/user-attachments/assets/b7c9d4b9-6b0e-4323-b36f-d21c5ceda81f" />
 
 
 # 📝 To-Do List

@@ -8,10 +8,25 @@ function showList() {
     itemList.style.display = "block";
 }
 
-function addToDoItem(taskText) {
+function createItem(taskText) {
     const li = document.createElement("li");
-    li.textContent = taskText;
     li.classList.add("todoItem");
+
+    const span = document.createElement("span");
+    span.textContent = taskText;
+    span.classList.add("itemText");
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "x";
+    deleteBtn.classList.add("deleteBtn");
+    deleteBtn.addEventListener("click", () => {
+        li.remove();
+        checkListVisibility();
+    });
+
+    li.appendChild(deleteBtn);
+    li.appendChild(span);
+
     list.appendChild(li);
 }
 
@@ -20,8 +35,16 @@ todoItemForm.addEventListener("submit", event => {
     const taskText = todoItemInput.value.trim();
 
     if (taskText) {
-        addToDoItem(taskText);
+        createItem(taskText);
         showList();
         todoItemInput.value = "";
     }
 });
+
+function checkListVisibility() {
+    if (list.children.length < 1) {
+        itemList.style.display = "none";
+    } else {
+        itemList.style.display = "block";
+    }
+}
